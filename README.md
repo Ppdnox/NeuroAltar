@@ -1,11 +1,45 @@
-# NeuroAltar — wersja robocza 0.29.5
+# NeuroAltar
 
-Lokalna aplikacja pomocnicza do Neuroshimy: Ostatniej Ery: panel MG, potyczki, bestiariusz, ekwipunek i karty postaci. To wersja robocza 24E, której pełny odbiór sesyjny pozostaje otwarty.
+Lokalna aplikacja do **Neuroshimy: Ostatniej Ery**: karty postaci, Panel MG,
+pięć potyczek, Bestiariusz, Ekwipunek, Pojazdy, Wiedza MG i kości.
 
-## Pobieranie na Maca
+## Aktualna wersja: 1.0.1 — 19 listopada 2026
 
-Pobierz `NeuroAltar-0.29.5-macOS-Apple-Silicon.zip`, rozpakuj archiwum i otwórz aplikację. Pakiet przeznaczony jest dla komputerów Mac z procesorem Apple Silicon; wersji Intel tutaj nie sprawdzono. Aplikacja ma podpis roboczy i nie jest notaryzowana przez Apple, więc macOS może wyświetlić ostrzeżenie przy pierwszym otwarciu. Jeśli ufasz źródłu, postępuj zgodnie z komunikatami macOS w ustawieniach prywatności i ochrony.
+[Pobierz wydanie 1.0.1](https://github.com/Ppdnox/NeuroAltar/releases/tag/v1.0.1)
 
-`NeuroAltar-0.29.5-source.zip` zawiera kod źródłowy i dokumentację projektu. Wymagania do samodzielnego zbudowania: Node 24, pnpm 11.19.0 oraz Rust i zależności Tauri. Szczegóły znajdują się w README w archiwum.
+- [Aplikacja macOS — Apple Silicon](https://github.com/Ppdnox/NeuroAltar/releases/download/v1.0.1/NeuroAltar-1.0.1-macOS-Apple-Silicon.zip)
+- [Źródła projektu 1.0.1](https://github.com/Ppdnox/NeuroAltar/releases/download/v1.0.1/NeuroAltar-1.0.1-source.zip)
+- [Lista zmian i instrukcja dla Windows](WINDOWS-ZMIANY-2026-11-19.md)
+- [Changelog](CHANGELOG.md)
+- [Sumy SHA-256](https://github.com/Ppdnox/NeuroAltar/releases/download/v1.0.1/SHA256SUMS.txt)
 
-Archiwa nie zawierają prywatnej bazy użytkownika ani katalogu materiałów referencyjnych. Nie są to wydania produkcyjne. Nie dołączono zweryfikowanej wersji dla Windows.
+Wydanie poprawia stosy amunicji, masy narzędzi, ładunki medyka, wybór Ulubionej
+broni i przywracanie fobii. Zawiera także dzisiejsze poprawki doświadczenia,
+trybów edycji/gry, podglądu sztuczek i opisów przeciwników.
+
+Weryfikacja: **618 testów TypeScript i 121 testów Rust**, kontrole kodu,
+build macOS i próby natywne — PASS. macOS 13.3 lub nowszy, Apple Silicon.
+Podpis aplikacji jest ad hoc, bez notaryzacji. Instalator i testy Windows
+są prowadzone oddzielnie; nie ma ich w tym wydaniu.
+
+## Instalacja i dane
+
+Rozpakuj aplikację i zastąp dotychczasowy NeuroAltar po jego zamknięciu.
+Aktualizacja z 1.0.0 zachowuje profil i dane. Nie kasuj katalogu danych.
+Historyczne przejście z 24E do 1.0.0 na Macu było jednorazowym pustym startem,
+wybranym przez użytkownika; nie należy go powtarzać przy 1.0.1 ani na Windows.
+
+## Praca nad wersją Windows
+
+Pobierz **NeuroAltar-1.0.1-source.zip** i przekaż je GPT/Codexowi razem z
+[WINDOWS-ZMIANY-2026-11-19.md](WINDOWS-ZMIANY-2026-11-19.md).
+Zachowaj lokalne poprawki Windows i bazę, a następnie porównaj i połącz zmiany.
+Paczka zawiera katalog źródeł, `MANIFEST.json` i kompletną historię w Git bundle.
+Commit źródeł: `f975256b63a45cb6a168e2ac6df4416b5f2c6246`.
+
+To repozytorium służy **dystrybucji**. Automatyczne archiwa GitHuba „Source code”
+obejmują repo dystrybucyjne, a nie właściwy projekt aplikacji. Właściwe źródła są
+osobnym załącznikiem wydania. Starsze paczki 0.29.5 zachowano jako archiwum.
+Bazy użytkowników oraz prywatne PDF/Excel nie są udostępniane.
+
+Made by Dominik *„Polakko”* Stanisławski.
